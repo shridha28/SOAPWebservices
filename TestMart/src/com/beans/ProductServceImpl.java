@@ -3,6 +3,8 @@ package com.beans;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.model.Product;
+
 public class ProductServceImpl {
 	
 	List<String> movies = new ArrayList<String>();
@@ -66,5 +68,16 @@ public boolean addProduct(String category,String product){
 		
 		return true;
 	}
+
+
+
+public List<Product> getProductsV2(String category){
+	List<Product> prodList = new ArrayList<Product>();
+	prodList.add(new Product("Java","sku",12));
+	prodList.add(new Product("abcf","abcf",1293));
+	prodList.add(new Product("Naee","e8jeje",57712));
+	
+	return prodList;
+}
 
 }
